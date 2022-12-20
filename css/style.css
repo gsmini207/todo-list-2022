@@ -96,7 +96,7 @@ img {
 #todo-form input {
   margin-left: 0px;
   margin-top: 10px;
-  width: 330px;
+  width: 400px;
   font-size: 15px;
   transition: opacity 0.3s ease-in-out;
   opacity: 0.4;
@@ -134,8 +134,8 @@ img {
 
 #todo-list {
   color: #fff;
-  width: 350px;
-  height: 180px;
+  width: 400px;
+  height: 300px;
   overflow: auto;
   box-sizing: border-box;
   padding-left: 0px;
@@ -172,6 +172,6 @@ img {
   position: absolute;
   animation: fadeIn 0.8s linear;
   bottom: 35px;
-  font-size: 12px;
-  opacity: 0.5;
+  font-size: 15px;
+  opacity: 0.8;
 }
