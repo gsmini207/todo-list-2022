@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap");
+
+.hidden {
+  display: none !important;
+}
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -5;
+  width: 100vw;
+  height: 100vh;
+}
+
+#clock {
+  margin-top: 10%;
+  color: white;
+  font-size: 75px;
+  margin-bottom: 0px;
+  font-weight: normal;
+}
+
+@keyframes FadeIn_weather {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.8;
+  }
+}
+
+#weather {
+  color: #fff;
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  font-size: 13px;
+}
+
+#weather:hover {
+  animation: FadeIn_weather 0.8s linear;
+}
+
+.ask-name,
+#greeting {
+  color: #fff;
+  opacity: 0.9;
+  font-size: 38px;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  padding: 10px 0px;
+  padding-left: 40px;
+}
+
+.greeting__me {
+  padding-left: 0px !important;
+}
+
+#login-form {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+}
+
+#login-form input,
+#todo-form input {
+  margin-top: 30px;
+  color: #fff;
+  opacity: 0.4;
+  border: none;
+  border-bottom: 1px solid #fff;
+  width: 300px;
+  font-size: 20px;
+  background-color: transparent;
+  margin-left: 50px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+#login-form input:focus,
+#todo-form input:focus {
+  outline: none;
+  color: #fff;
+  opacity: 0.8;
+}
+
+#todo-form input {
+  margin-left: 0px;
+  margin-top: 10px;
+  width: 330px;
+  font-size: 15px;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0.4;
+  padding: 7px 10px;
+}
+
+#todo-form input::placeholder {
+  color: #fff;
+  opacity: 1;
+  font-size: 15px;
+  text-align: center;
+}
+
+#login-form button {
+  border: 1px solid #fff;
+  width: 100px;
+  height: 40px;
+  background-color: transparent;
+  border-radius: 7px;
+  font-size: 18px;
+  color: #fff;
+  margin-left: 10px;
+}
+
+@keyframes fadeIn {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 0.5;
+  }
+}
+
+#todo-list {
+  color: #fff;
+  width: 350px;
+  height: 180px;
+  overflow: auto;
+  box-sizing: border-box;
+  padding-left: 0px;
+  font-size: 13px;
+}
+
+#todo-list::-webkit-scrollbar {
+  display: none;
+}
+
+#todo-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+#todo-list button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  border: 1px solid #fff;
+  font-size: 8px;
+  opacity: 0.4;
+  border-radius: 6px;
+}
+
+#todo-list button:hover {
+  opacity: 0.8;
+  transition: opacity 0.2s ease-in-out;
+}
+
+#quote {
+  color: #fff;
+  position: absolute;
+  animation: fadeIn 0.8s linear;
+  bottom: 35px;
+  font-size: 12px;
+  opacity: 0.5;
+}
